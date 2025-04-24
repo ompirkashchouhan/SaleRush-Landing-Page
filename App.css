@@ -60,10 +60,8 @@
   display: none !important;
 }
 
-.logo-icon {
-  width: 35px;
-  height: 35px;
-  font-weight: bold;
+.web_Logo{
+  width: 120px;
 }
 
 .myNavDropMenu{
@@ -112,7 +110,7 @@
 }
 
 .btn-free {
-  background: #0984e3;
+  background: #1c3459 !important;
   color: white;
   padding: 0.6rem 2rem;
   border: none;
@@ -364,7 +362,7 @@
 }
 
 .btnBlueBoostSec{
-  background-color: #3045ff !important;
+  background-color:#1c3459 !important;
   margin-bottom: 20px;
 }
 
@@ -473,7 +471,7 @@
 }
 
 .webLogo{
-  width: 100px;
+  width: 150px;
   cursor: pointer;
   margin: 20px auto !important;
 
@@ -546,7 +544,8 @@
 }
 
 .footerLogo{
-  width: 40px;
+  width: 120px;
+  margin-bottom: 10px;
   border-radius: 5px;
 }
 

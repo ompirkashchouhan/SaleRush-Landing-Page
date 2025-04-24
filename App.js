@@ -4,6 +4,7 @@ import { faChevronDown, } from "@fortawesome/free-solid-svg-icons";
 import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion, AnimatePresence } from "framer-motion";
+import TalkeenLogo from "./assets/images/talkeen-web.png";
 import HeroSectionImg from "./assets/images/hero.png";
 import CloudLogo from "./assets/images/cloud-Icon.png";
 import HuesLogo from "./assets/images/hues-Icon.png";
@@ -15,7 +16,6 @@ import AnalyticsDataLogo from "./assets/images/analytics-data-section.png";
 import CorrectionMarkIcon from "./assets/images/correction-mark.png";
 import CustomerSectionImg from "./assets/images/customers-section.png";
 import IconBar from "./assets/images/icons-bar.png";
-import WebLogo from "./assets/images/web-logo.png";
 import ProductInsightsImg from "./assets/images/product-insights.png";
 import LastOneSecImg from "./assets/images/last-one-section-image.png";
 import SocialIcons from "./assets/images/social-icons.png";
@@ -70,10 +70,7 @@ function App() {
         <div className="d-flex align-items-center NavContainer  justify-content-between gap-3">
           {/* Logo */}
           <div className="d-flex align-items-center">
-            <div className="logo-icon me-2 bg-dark text-white d-flex justify-content-center align-items-center rounded">
-              S
-            </div>
-            <span className="fw-bold fs-5">SaleRush</span>
+            <img src={TalkeenLogo} className="web_Logo"/>
           </div>
 
           {/* Toggler */}
@@ -277,13 +274,14 @@ function App() {
           className="text-3xl md:text-5xl font-bold leading-tight max-w-3xl"
         >
           <h1 className="MainHeroText">
-            Drive Growth with <br />
+          The commercial brain behind<br /> your business.
+            {/* Drive Growth with <br />
             <span className="text-gray-500">
               Comprehensive{" "}
               <span className="text-black">
                 <span className="SalesTextHero">Sales</span> Data
               </span>
-            </span>
+            </span> */}
           </h1>
         </motion.h1>
 
@@ -294,7 +292,7 @@ function App() {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="mt-4 paraHeroSection max-w-xl"
         >
-          Gain Deep Insights, Optimize Performance, and Drive Revenue Growth
+          Talkeen handles your conversations, bookings, follow-ups and sales — <br />just like a professional sales agent working 24/7 for your business,<br /> in a natural, human-like, and effortless way.
         </motion.p>
 
         {/* Buttons */}
@@ -305,10 +303,10 @@ function App() {
           className="mt-8 flex flex-col sm:flex-row gap-4"
         >
           <button className="px-6 py-3 btn-free rounded-md bg-black text-white font-medium shadow-md hover:bg-gray-800 transition">
-            Get Started for Free
+          Discover Talkeen
           </button>
           <button className="px-6 py-3 btn-demo rounded-md border border-gray-300 text-gray-700 font-medium hover:bg-gray-100 transition">
-            Request a Demo
+          Try it Free
           </button>
         </motion.div>
 
@@ -590,7 +588,7 @@ function App() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <div className="toolkitImageSection">
-            <img className="webLogo" src={WebLogo}/>
+            <img className="webLogo" src={TalkeenLogo}/>
             <img className="iconsAndLogo" src={IconBar}/>
           </div>
         </motion.div>
@@ -801,7 +799,7 @@ function App() {
               viewport={{ once: true }}
             >
               <div className="parentSectionImg">
-                <div className="imageLogoSection"><img className="footerLogo" src={WebLogo}/> <h5>SaleRush</h5></div>
+                <div className="imageLogoSection"><img className="footerLogo" src={TalkeenLogo}/></div>
                 <p>Discover the power of data to drive<br />your sales strategy and exceed<br />your targets.</p>
               </div>
             </motion.div>
